@@ -1,14 +1,16 @@
-============================================
-Turnkey K40 Laser Firmware (Based on Marlin)
-============================================
+==========================
+Turnkey K40 Laser Firmware
+==========================
 Marlin has a GPL license because I believe in open development.
 Please do not use this code in products (Laser cutters) that are closed source or are crippled by a patent.
 
 Quick Information
 ===================
-This firmware is based off Marlin for 3D printers, for more info see https://github.com/MarlinFirmware/Marlin
+Based off Marlin for 3D printers, for more info see https://github.com/MarlinFirmware/Marlin
+Original credits for building this firmware from stock Marlin go to THinkscape and Lansing Makers Network. 
+This firmware is based on their foundation work.
 
-Features:
+Features of this repo:
 
 *   Modified for K40 power supplies that use 'Firing Pin Signal Low' to fire.
 *   Design in Inkscape, export to GCode, print!
