@@ -10,6 +10,7 @@ This firmware is based off Marlin for 3D printers, for more info see https://git
 
 Features:
 
+*   Modified for K40 power supplies that use 'Firing Pin Signal Low' to fire.
 *   Design in Inkscape, export to GCode, print!
 *   Raster image support, set your own max power level and have all pixel data appropriately shifted for intensity. Defaults to 270dpi
 *   Set your own feed rate in mm per minute.
