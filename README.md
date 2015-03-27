@@ -10,7 +10,17 @@ Based off Marlin for 3D printers, for more info see https://github.com/MarlinFir
 Original credits for building this firmware from stock Marlin go to THinkscape and Lansing Makers Network. 
 This firmware is based on their foundation work.
 
+Safety Warnings
+==================
+Ensure that the Power Supply 5v rail is connected to RAMPS I2C 5v pin and that the D1 diode is removed from the RAMPS board as shown in the wiring diagram. If this pin is not connected the laser will fire when you disconnect your ramps board from USB power.
+o
+Wiring
+==================
+Wire your RAMPS board to your original laser end stops and laser power supply as shown in the wiring diagram in this repo.
+
+
 Features of this repo:
+========================
 
 *   Modified for K40 power supplies that use 'Firing Pin Signal Low' to fire.
 *   Design in Inkscape, export to GCode, print!
