@@ -3,6 +3,7 @@ Turnkey K40 Laser Firmware
 ==========================
 Marlin has a GPL license because I believe in open development.
 Please do not use this code in products (Laser cutters) that are closed source or are crippled by a patent.
+You can contact me via email at : 394ad2f@gmail.com
 
 Quick Information
 ===================
