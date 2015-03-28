@@ -9,6 +9,7 @@ Quick Information
 Based off Marlin for 3D printers, for more info see https://github.com/MarlinFirmware/Marlin
 Original credits for building this firmware from stock Marlin go to THinkscape and Lansing Makers Network. 
 This firmware is based on their foundation work.
+This firmware is designed to be used in conjunction with my Inkscape 0.91 gcode exporter https://github.com/TurnkeyTyranny/laser-gcode-exporter-inkscape-plugin
 
 Safety Warnings
 ==================
