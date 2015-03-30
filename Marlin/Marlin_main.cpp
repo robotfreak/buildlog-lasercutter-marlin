@@ -527,9 +527,11 @@ void get_command()
         comment_mode = false; //for new command
         fromsd[bufindw] = false;
 
+        //Turnkey - Changed <=6 to <=8 to allow up to 999999 lines of raster data to be transmitted per raster node
+        //This area needs improving for stability.
         if(  (strstr_P(cmdbuffer[bufindw], PSTR("G7")) == NULL && strchr(cmdbuffer[bufindw], 'N') != NULL) || //For non G7 commands, run as normal.
             ((strstr_P(cmdbuffer[bufindw], PSTR("G7")) != NULL) &&
-            ((strstr_P(cmdbuffer[bufindw], PSTR("G7")) - strchr(cmdbuffer[bufindw], 'N')  <=6 ) &&
+            ((strstr_P(cmdbuffer[bufindw], PSTR("G7")) - strchr(cmdbuffer[bufindw], 'N')  <=8 ) &&
             (strstr_P(cmdbuffer[bufindw], PSTR("G7")) - strchr(cmdbuffer[bufindw], 'N')  >0 )))
           )
         {
