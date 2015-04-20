@@ -1,25 +1,52 @@
-==========================
-Turnkey K40 Laser Firmware
-==========================
+==========================================
+Turnkey K40 Laser Arduino + Ramps Firmware
+==========================================
+An example of this firmware in action : https://www.youtube.com/watch?v=6DKSxDIkqoA
+You can contact me via email at : 394ad2f@gmail.com - I check my email daily typically
+
 Marlin has a GPL license because I believe in open development.
 Please do not use this code in products (Laser cutters) that are closed source or are crippled by a patent.
-
-You can contact me via email at : 394ad2f@gmail.com
 
 Quick Information
 ===================
 Based off Marlin for 3D printers, for more info see https://github.com/MarlinFirmware/Marlin
-Original credits for building this firmware from stock Marlin go to THinkscape and Lansing Makers Network. 
+Original credits for building this firmware from stock Marlin go to THinkscape and Lansing Makers Network and John for help with raster support. 
 This firmware is based on their foundation work.
 This firmware is designed to be used in conjunction with my Inkscape 0.91 gcode exporter https://github.com/TurnkeyTyranny/laser-gcode-exporter-inkscape-plugin
 
 Safety Warnings
 ==================
 Ensure that the Power Supply 5v rail is connected to RAMPS I2C 5v pin and that the D1 diode is removed from the RAMPS board as shown in the wiring diagram. If this pin is not connected the laser will fire when you disconnect your ramps board from USB power.
-o
+
 Wiring
 ==================
 Wire your RAMPS board to your original laser end stops and laser power supply as shown in the wiring diagram in this repo.
+
+
+Configuring and compilation:
+============================
+
+Install the arduino software IDE/toolset v23 (Some configurations also work with 1.x.x)
+   http://www.arduino.cc/en/Main/Software
+
+Download the Marlin firmware to your PC and extract it
+   https://github.com/TurnkeyTyranny/buildlog-lasercutter-marlin/archive/master.zip
+
+* Start the Arduino IDE.
+    ** Select Tools -> Board -> Arduino Mega 2560    or your microcontroller
+    ** Select the correct serial port in Tools ->Serial Port (Usually Com7 or the highest port number)
+    ** Open Marlin.ino found in the 'Marlin' directory
+
+* Click the Verify/Compile button
+
+* Click the Upload button
+    If all goes well the firmware is uploading and you'll see the led on your arduino flashing wildly.
+    The Arduino IDE will tell you when it has finished uploading.
+
+* Utilise my exporter with Inkscape to design your cuts and rasters
+    https://github.com/TurnkeyTyranny/laser-gcode-exporter-inkscape-plugin
+
+* Burn your eyeballs out!
 
 
 Features of this repo:
@@ -176,32 +203,4 @@ M Codes
 *  M351 - Toggle MS1 MS2 pins directly.
 *  M928 - Start SD logging (M928 filename.g) - ended by M29
 *  M999 - Restart after being stopped by error
-
-
-Configuring and compilation:
-============================
-
-Install the arduino software IDE/toolset v23 (Some configurations also work with 1.x.x)
-   http://www.arduino.cc/en/Main/Software
-
-For gen6/gen7 and sanguinololu the Sanguino directory in the Marlin dir needs to be copied to the arduino environment.
-  copy ArduinoAddons\Arduino_x.x.x\sanguino <arduino home>\hardware\Sanguino
-
-Copy the Marlin firmware
-   https://github.com/ErikZalm/Marlin/tree/Marlin_v1
-   (Use the download button)
-
-Start the arduino IDE.
-Select Tools -> Board -> Arduino Mega 2560    or your microcontroller
-Select the correct serial port in Tools ->Serial Port
-Open Marlin.pde
-
-Click the Verify/Compile button
-
-Click the Upload button
-If all goes well the firmware is uploading
-
-Burn your eyeballs out!
-
-
 
