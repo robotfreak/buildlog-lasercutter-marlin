@@ -2,6 +2,7 @@
 Turnkey K40 Laser Arduino + Ramps Firmware
 ==========================================
 An example of this firmware in action : https://www.youtube.com/watch?v=6DKSxDIkqoA
+
 You can contact me via email at : 394ad2f@gmail.com - I check my email daily typically
 
 Marlin has a GPL license because I believe in open development.
@@ -12,6 +13,7 @@ Quick Information
 Based off Marlin for 3D printers, for more info see https://github.com/MarlinFirmware/Marlin
 Original credits for building this firmware from stock Marlin go to THinkscape and Lansing Makers Network and John for help with raster support. 
 This firmware is based on their foundation work.
+
 This firmware is designed to be used in conjunction with my Inkscape 0.91 gcode exporter https://github.com/TurnkeyTyranny/laser-gcode-exporter-inkscape-plugin
 
 Safety Warnings
@@ -29,13 +31,17 @@ Configuring and compilation:
 Install the arduino software IDE/toolset v23 (Some configurations also work with 1.x.x)
    http://www.arduino.cc/en/Main/Software
 
-Download the Marlin firmware to your PC and extract it
+* Download the Marlin firmware to your PC and extract it
    https://github.com/TurnkeyTyranny/buildlog-lasercutter-marlin/archive/master.zip
 
 * Start the Arduino IDE.
+
     ** Select Tools -> Board -> Arduino Mega 2560    or your microcontroller
+
     ** Select the correct serial port in Tools ->Serial Port (Usually Com7 or the highest port number)
+
     ** Open Marlin.ino found in the 'Marlin' directory
+
 
 * Click the Verify/Compile button
 
