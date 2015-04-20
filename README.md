@@ -28,7 +28,7 @@ Wire your RAMPS board to your original laser end stops and laser power supply as
 Configuring and compilation:
 ============================
 
-Install the arduino software IDE/toolset v23 (Some configurations also work with 1.x.x)
+Install the arduino software IDE/toolset (Some configurations also work with 1.x.x)
    http://www.arduino.cc/en/Main/Software
 
 * Download the Marlin firmware to your PC and extract it
