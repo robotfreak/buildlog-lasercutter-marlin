@@ -3,18 +3,20 @@ Turnkey K40 Laser Arduino + Ramps Firmware
 ==========================================
 An example of this firmware in action : https://www.youtube.com/watch?v=6DKSxDIkqoA
 
-You can contact me via email at : 394ad2f@gmail.com - I check my email daily typically
-
-Marlin has a GPL license because I believe in open development.
-Please do not use this code in products (Laser cutters) that are closed source or are crippled by a patent.
-
-Quick Information
-===================
 Based off Marlin for 3D printers, for more info see https://github.com/MarlinFirmware/Marlin
 Original credits for building this firmware from stock Marlin go to THinkscape and Lansing Makers Network and John for help with raster support. 
 This firmware is based on their foundation work.
 
 This firmware is designed to be used in conjunction with my Inkscape 0.91 gcode exporter https://github.com/TurnkeyTyranny/laser-gcode-exporter-inkscape-plugin
+
+You can contact me via email at : 394ad2f@gmail.com, I check my email daily usually.
+
+Donations
+---------
+Find this software useful? Donations are gratefully appreciated. 
+
+* Paypal to 394ad2f@gmail.com
+* Bitcoins to 16TFmnFyvDA8Q6TTakvvhargy8c89Rb3cj
 
 Safety Warnings
 ==================
