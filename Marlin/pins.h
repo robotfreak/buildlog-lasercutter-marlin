@@ -355,8 +355,60 @@
 
     #define BEEPER             33
 
-  #else
 
+  #elif defined CNC_SHIELD
+
+    #define X_STEP_PIN          2 //54
+    #define X_DIR_PIN           5 //55
+    #define X_ENABLE_PIN        8 //38
+    #define X_MIN_PIN          -1 //3
+    #define X_MAX_PIN           9 //2
+
+    #define Y_STEP_PIN          3 //60
+    #define Y_DIR_PIN           6 //61
+    #define Y_ENABLE_PIN        8 //56
+    #define Y_MIN_PIN          -1 //14
+    #define Y_MAX_PIN          10 //15
+
+    #define Z_STEP_PIN         46
+    #define Z_DIR_PIN          48
+    #define Z_ENABLE_PIN       62
+    #define Z_MIN_PIN          18
+    #define Z_MAX_PIN          19
+
+    #define Z2_STEP_PIN        36
+    #define Z2_DIR_PIN         34
+    #define Z2_ENABLE_PIN      30
+
+    #define E0_STEP_PIN        26
+    #define E0_DIR_PIN         28
+    #define E0_ENABLE_PIN      24
+
+    #define E1_STEP_PIN        36
+    #define E1_DIR_PIN         34
+    #define E1_ENABLE_PIN      30
+
+    #define SDPOWER            -1
+    #define SDSS               53
+    #define LED_PIN            13
+
+	#if LASER_CONTROL == 1
+      #define LASER_FIRING_PIN    5
+    #endif
+	#if LASER_CONTROL == 2
+      #define LASER_INTENSITY_PIN 12 // Digital pins 2, 3, 5, 6, 7, 8 are attached to timers we can use
+      #define LASER_FIRING_PIN	13
+	#endif
+	#ifdef LASER_POWER_DOWN
+	  #define LASER_POWER_PIN 9 // This is currently hard-coded to timer2 which services pins 9, 10
+	#endif // LASER_POWER_DOWN
+	#ifdef LASER_PERIPHERALS
+      #define LASER_PERIPHERALS_PIN       4
+	  #define LASER_PERIPHERALS_STATUS_PIN		  11
+    #endif // LASER_PERIPHERALS
+
+
+  #else
     #define X_STEP_PIN         54
     #define X_DIR_PIN          55
     #define X_ENABLE_PIN       38
